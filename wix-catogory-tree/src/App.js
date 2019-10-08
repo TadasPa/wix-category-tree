@@ -30,10 +30,6 @@ class App extends Component {
 
   generateNodesIterative() {
     return [];
-
-
-
-
   }
 
   generateNodesRecursive(dataTree) {
@@ -71,7 +67,7 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.addingInProgress && <div key={this.uuidv4()} >
-          <input placeholder="Name" onClick="{addItemIn}" />
+          <input placeholder="Name" />
           <button onClick={this.saveNew}> Save </button>
         </div>}
         Mode - {this.state.mode}
